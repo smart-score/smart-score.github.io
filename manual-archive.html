@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/manual.css">
+  <link rel="stylesheet" href="assets/css/manual-details.css">
+  <link rel="stylesheet" href="assets/css/archive.css">
+  <title>Match Archive · Smart-Score</title>
+</head>
+<body>
+<main class="details-page archive-page" data-title-en="Match Archive" data-title-de="Spielarchiv">
+  <div class="bg"></div><div class="rays"></div>
+  <div class="language-switcher">
+    <span class="language-label" data-en="Language" data-de="Sprache">Language</span>
+    <details id="language"><summary aria-label="Select language"><span id="current-flag" class="flag flag-us" aria-hidden="true"></span><span id="current-language">English</span></summary><div class="language-menu"><button type="button" data-language="en"><span class="flag flag-us" aria-hidden="true"></span>English</button><button type="button" data-language="de"><span class="flag flag-de" aria-hidden="true"></span>Deutsch</button></div></details>
+  </div>
+
+  <div class="details-shell archive-shell">
+    <a class="back-link" href="manual.html" data-en="← Back to manual" data-de="← Zurück zur Anleitung">← Back to manual</a>
+    <img class="manual-logo" src="assets/images/app_logo.svg" alt="Smart-Score">
+
+    <header class="archive-intro">
+      <p class="archive-eyebrow" data-en="COMPLETED MATCHES" data-de="ABGESCHLOSSENE PARTIEN">COMPLETED MATCHES</p>
+      <h1 data-en="Match Archive" data-de="Spielarchiv">Match Archive</h1>
+      <p data-en="Smart-Score automatically saves every finalized match in the archive. The newest matches appear first, giving you a persistent local history of results, match times, and discipline-specific statistics." data-de="Smart-Score speichert jede abgeschlossene Partie automatisch im Archiv. Die neuesten Partien stehen zuerst und bilden einen lokal gespeicherten Verlauf mit Ergebnissen, Spielzeiten und disziplinspezifischen Statistiken.">Smart-Score automatically saves every finalized match in the archive. The newest matches appear first, giving you a persistent local history of results, match times, and discipline-specific statistics.</p>
+    </header>
+
+    <section class="archive-section">
+      <div class="archive-heading"><span>01</span><div><p data-en="THE ARCHIVE AT A GLANCE" data-de="DAS ARCHIV AUF EINEN BLICK">THE ARCHIVE AT A GLANCE</p><h2 data-en="Find and review a match" data-de="Eine Partie finden und prüfen">Find and review a match</h2></div></div>
+      <p data-en="Use the controls above and below the match list to narrow large archives and move between result pages. Each change is applied directly to the displayed list." data-de="Mit den Bedienelementen oberhalb und unterhalb der Partieliste kannst du große Archive eingrenzen und zwischen Ergebnisseiten wechseln. Jede Änderung wird direkt auf die angezeigte Liste angewendet.">Use the controls above and below the match list to narrow large archives and move between result pages. Each change is applied directly to the displayed list.</p>
+
+      <figure class="archive-figure">
+        <div class="archive-image-stage">
+          <img src="assets/images/Archive_Overview.png" width="2388" height="1578" loading="lazy" alt="Smart-Score Match Archive with filters, archived matches, swipe actions, and pagination">
+          <span class="archive-marker marker-discipline" aria-hidden="true">1</span>
+          <span class="archive-marker marker-dates" aria-hidden="true">2</span>
+          <span class="archive-marker marker-reset" aria-hidden="true">3</span>
+          <span class="archive-marker marker-entry" aria-hidden="true">4</span>
+          <span class="archive-marker marker-actions" aria-hidden="true">5</span>
+          <span class="archive-marker marker-pages" aria-hidden="true">6</span>
+          <span class="archive-marker marker-clear" aria-hidden="true">7</span>
+        </div>
+      </figure>
+
+      <div class="archive-feature-grid">
+        <article><span>1</span><div><h3 data-en="Filter by discipline" data-de="Nach Disziplin filtern">Filter by discipline</h3><p data-en="Select one or several disciplines. Only disciplines represented in the current archive are offered, and choosing several shows matches from any of those selections." data-de="Wähle eine oder mehrere Disziplinen. Es werden nur Disziplinen angeboten, die im aktuellen Archiv vorhanden sind; bei mehreren Auswahlen werden Partien aus jeder dieser Disziplinen angezeigt.">Select one or several disciplines. Only disciplines represented in the current archive are offered, and choosing several shows matches from any of those selections.</p></div></article>
+        <article><span>2</span><div><h3 data-en="Choose a date range" data-de="Datumsbereich wählen">Choose a date range</h3><p data-en="The From and To dates are inclusive and are limited to the earliest and latest archived match dates. Discipline and date filters are combined." data-de="Das Von- und Bis-Datum werden einschließlich berücksichtigt und sind auf das früheste und späteste Partiedatum im Archiv begrenzt. Disziplin- und Datumsfilter werden kombiniert.">The From and To dates are inclusive and are limited to the earliest and latest archived match dates. Discipline and date filters are combined.</p></div></article>
+        <article><span>3</span><div><h3 data-en="Reset filters" data-de="Filter zurücksetzen">Reset filters</h3><p><span data-en="Tap " data-de="Tippe auf ">Tap </span><em data-en="Reset" data-de="Zurücksetzen">Reset</em><span data-en=" to clear every discipline selection and restore the full available date range. The control is enabled only while a filter is active." data-de=", um alle Disziplinenauswahlen zu entfernen und den vollständigen verfügbaren Datumsbereich wiederherzustellen. Das Bedienelement ist nur aktiv, wenn ein Filter gesetzt ist."> to clear every discipline selection and restore the full available date range. The control is enabled only while a filter is active.</span></p></div></article>
+        <article><span>4</span><div><h3 data-en="Archived match" data-de="Archivierte Partie">Archived match</h3><p data-en="Every card identifies the discipline, date, duration, both players, final result, and the additional statistics available for that discipline." data-de="Jede Karte zeigt Disziplin, Datum, Dauer, beide Spieler, Endergebnis und die für diese Disziplin verfügbaren zusätzlichen Statistiken.">Every card identifies the discipline, date, duration, both players, final result, and the additional statistics available for that discipline.</p></div></article>
+        <article><span>5</span><div><h3 data-en="Match actions" data-de="Partieaktionen">Match actions</h3><p data-en="Swipe a match card to the left to reveal the blue Results Sheet action and the red action for deleting that individual match." data-de="Wische eine Partiekarte nach links, um die blaue Aktion für den Spielbericht und die rote Aktion zum Löschen dieser einzelnen Partie einzublenden.">Swipe a match card to the left to reveal the blue Results Sheet action and the red action for deleting that individual match.</p></div></article>
+        <article><span>6</span><div><h3 data-en="Match count and pages" data-de="Partieanzahl und Seiten">Match count and pages</h3><p data-en="The count reflects the current filtered result. Smart-Score displays up to 20 matches per page; use the numbered and arrow buttons to move through additional pages." data-de="Die Anzahl bezieht sich auf das aktuelle Filterergebnis. Smart-Score zeigt bis zu 20 Partien pro Seite; mit den nummerierten Schaltflächen und Pfeilen wechselst du zu weiteren Seiten.">The count reflects the current filtered result. Smart-Score displays up to 20 matches per page; use the numbered and arrow buttons to move through additional pages.</p></div></article>
+        <article><span>7</span><div><h3 data-en="Clear the complete archive" data-de="Gesamtes Archiv leeren">Clear the complete archive</h3><p data-en="The trash button in the navigation bar removes every archived match. Smart-Score asks for confirmation before clearing the archive." data-de="Die Papierkorb-Schaltfläche in der Navigationsleiste entfernt alle archivierten Partien. Smart-Score fragt vor dem Leeren des Archivs nach einer Bestätigung.">The trash button in the navigation bar removes every archived match. Smart-Score asks for confirmation before clearing the archive.</p></div></article>
+      </div>
+    </section>
+
+    <section class="archive-section">
+      <div class="archive-heading"><span>02</span><div><p data-en="MATCH INFORMATION" data-de="PARTIEINFORMATIONEN">MATCH INFORMATION</p><h2 data-en="Reading an archive card" data-de="Eine Archivkarte lesen">Reading an archive card</h2></div></div>
+      <p data-en="All cards share the same basic match information. The lower portion changes to show the statistics most useful for Straight Pool or the 8-/9-/10-Ball disciplines." data-de="Alle Karten enthalten dieselben grundlegenden Partieinformationen. Der untere Bereich zeigt je nach 14.1 endlos oder 8-/9-/10-Ball die jeweils wichtigsten Statistiken.">All cards share the same basic match information. The lower portion changes to show the statistics most useful for Straight Pool or the 8-/9-/10-Ball disciplines.</p>
+
+      <div class="archive-card-grid">
+        <article class="common-card"><span>1</span><div><h3 data-en="Information shown for every match" data-de="Angaben bei jeder Partie">Information shown for every match</h3><p data-en="The discipline appears at the far left. The card header shows the match date and total duration, while the center shows the two player names and the final match result." data-de="Ganz links steht die Disziplin. Der Kopfbereich zeigt Partiedatum und Gesamtdauer; in der Mitte erscheinen die beiden Spielernamen und das endgültige Partieergebnis.">The discipline appears at the far left. The card header shows the match date and total duration, while the center shows the two player names and the final match result.</p></div></article>
+        <article><span>2</span><div><h3 data-en="Straight Pool" data-de="14.1 endlos">Straight Pool</h3><p data-en="The central result is the final points score. For each player, the card also shows innings, high run, scoring average, total time at the table, and average time per ball." data-de="Das mittlere Ergebnis ist der endgültige Punktestand. Für jeden Spieler zeigt die Karte außerdem Aufnahmen, Höchstserie, Punktedurchschnitt, gesamte Tischzeit und durchschnittliche Zeit pro Kugel.">The central result is the final points score. For each player, the card also shows innings, high run, scoring average, total time at the table, and average time per ball.</p></div></article>
+        <article><span>3</span><div><h3 data-en="8-Ball, 9-Ball, and 10-Ball" data-de="8-Ball, 9-Ball und 10-Ball">8-Ball, 9-Ball, and 10-Ball</h3><p data-en="The large result shows the sets won by each player. The smaller line below lists the rack score of every completed set in playing order." data-de="Das große Ergebnis zeigt die von jedem Spieler gewonnenen Sätze. Die kleinere Zeile darunter listet die Rack-Ergebnisse aller abgeschlossenen Sätze in Spielreihenfolge auf.">The large result shows the sets won by each player. The smaller line below lists the rack score of every completed set in playing order.</p></div></article>
+      </div>
+    </section>
+
+    <section class="archive-section archive-actions-section">
+      <div class="archive-heading"><span>03</span><div><p data-en="REVIEW OR REMOVE" data-de="PRÜFEN ODER ENTFERNEN">REVIEW OR REMOVE</p><h2 data-en="Actions for archived matches" data-de="Aktionen für archivierte Partien">Actions for archived matches</h2></div></div>
+      <p data-en="Swipe a card left until the two actions appear. These actions apply to the selected match only; the trash button in the navigation bar applies to the complete archive." data-de="Wische eine Karte nach links, bis die beiden Aktionen erscheinen. Diese Aktionen gelten nur für die ausgewählte Partie; die Papierkorb-Schaltfläche in der Navigationsleiste gilt für das gesamte Archiv.">Swipe a card left until the two actions appear. These actions apply to the selected match only; the trash button in the navigation bar applies to the complete archive.</p>
+
+      <aside class="archive-hint"><strong data-en="Hint" data-de="Hinweis">Hint</strong><p data-en="The maximum number of saved matches is configured in Settings. When that limit is exceeded, Smart-Score keeps the newest entries and removes the oldest ones." data-de="Die maximale Anzahl gespeicherter Partien wird in den Einstellungen festgelegt. Wird diese Grenze überschritten, behält Smart-Score die neuesten Einträge und entfernt die ältesten.">The maximum number of saved matches is configured in Settings. When that limit is exceeded, Smart-Score keeps the newest entries and removes the oldest ones.</p></aside>
+
+      <div class="archive-action-grid">
+        <article class="sheet-action"><span>1</span><div><h3 data-en="Open the Results Sheet" data-de="Spielbericht öffnen">Open the Results Sheet</h3><p><span data-en="Tap the blue " data-de="Tippe auf die blaue Schaltfläche ">Tap the blue </span><em data-en="Results Sheet" data-de="Spielbericht">Results Sheet</em><span data-en=" action to reopen the detailed record. Smart-Score automatically displays the inning-based Straight Pool sheet or the set-and-rack 8-/9-/10-Ball sheet." data-de=", um den detaillierten Verlauf erneut zu öffnen. Smart-Score zeigt automatisch den auf Aufnahmen basierenden Bericht für 14.1 endlos oder den Satz-und-Rack-Bericht für 8-/9-/10-Ball."> action to reopen the detailed record. Smart-Score automatically displays the inning-based Straight Pool sheet or the set-and-rack 8-/9-/10-Ball sheet.</span></p></div></article>
+        <article class="delete-action"><span>2</span><div><h3 data-en="Delete one match" data-de="Eine Partie löschen">Delete one match</h3><p data-en="Tap the red trash action to remove the selected match from the list and the saved archive. This individual delete action is performed immediately." data-de="Tippe auf die rote Papierkorb-Aktion, um die ausgewählte Partie aus der Liste und dem gespeicherten Archiv zu entfernen. Diese einzelne Löschaktion wird sofort ausgeführt.">Tap the red trash action to remove the selected match from the list and the saved archive. This individual delete action is performed immediately.</p></div></article>
+      </div>
+    </section>
+  </div>
+</main>
+<script src="assets/js/manual.js"></script>
+</body>
+</html>

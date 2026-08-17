@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/manual.css">
+  <link rel="stylesheet" href="assets/css/manual-details.css">
+  <link rel="stylesheet" href="assets/css/monitoring.css">
+  <title>Match Monitoring · Smart-Score</title>
+</head>
+<body>
+<main class="details-page monitoring-page" data-title-en="Match Monitoring" data-title-de="Partieüberwachung">
+  <div class="bg"></div><div class="rays"></div>
+  <div class="language-switcher">
+    <span class="language-label" data-en="Language" data-de="Sprache">Language</span>
+    <details id="language"><summary aria-label="Select language"><span id="current-flag" class="flag flag-us" aria-hidden="true"></span><span id="current-language">English</span></summary><div class="language-menu"><button type="button" data-language="en"><span class="flag flag-us" aria-hidden="true"></span>English</button><button type="button" data-language="de"><span class="flag flag-de" aria-hidden="true"></span>Deutsch</button></div></details>
+  </div>
+
+  <div class="details-shell monitoring-shell">
+    <a class="back-link" href="manual.html" data-en="← Back to manual" data-de="← Zurück zur Anleitung">← Back to manual</a>
+    <img class="manual-logo" src="assets/images/app_logo.svg" alt="Smart-Score">
+
+    <header class="monitoring-intro">
+      <p class="monitor-eyebrow" data-en="LIVE OVERVIEW" data-de="LIVE-ÜBERSICHT">LIVE OVERVIEW</p>
+      <h1 data-en="Match Monitoring" data-de="Partieüberwachung">Match Monitoring</h1>
+      <p data-en="Monitoring brings the matches from all available Smart-Score tables together on one screen. You can easily follow matches on the same network without any special configuration." data-de="Das Monitoring führt die Partien aller verfügbaren Smart-Score-Tische auf einem Bildschirm zusammen. Partien im selben Netzwerk lassen sich ganz einfach und ohne besondere Konfiguration verfolgen.">Monitoring brings the matches from all available Smart-Score tables together on one screen. You can easily follow matches on the same network without any special configuration.</p>
+    </header>
+
+    <section class="monitor-section">
+      <div class="monitor-heading"><span>01</span><div><p data-en="THE ROOM AT A GLANCE" data-de="DER RAUM AUF EINEN BLICK">THE ROOM AT A GLANCE</p><h2 data-en="The Monitoring overview" data-de="Die Monitoring-Übersicht">The Monitoring overview</h2></div></div>
+      <p data-en="Every table that is streaming a match appears as a separate card. Smart-Score refreshes the overview every second so score and status changes remain current." data-de="Jeder Tisch, der eine Partie streamt, erscheint als eigene Karte. Smart-Score aktualisiert die Übersicht jede Sekunde, damit Änderungen an Spielstand und Status aktuell bleiben.">Every table that is streaming a match appears as a separate card. Smart-Score refreshes the overview every second so score and status changes remain current.</p>
+      <figure class="monitor-figure overview-figure"><img src="assets/images/Monitoring.png" width="2048" height="1379" loading="lazy" alt="Smart-Score Monitoring overview with six tables"></figure>
+      <div class="overview-facts">
+        <article><span>1</span><div><h3 data-en="Ordered by table number" data-de="Nach Tischnummer sortiert">Ordered by table number</h3><p data-en="Matches are always sorted by table number in ascending order. Cards fill the grid from left to right and then continue on the next row." data-de="Partien werden immer aufsteigend nach Tischnummer sortiert. Die Karten füllen das Raster von links nach rechts und werden anschließend in der nächsten Zeile fortgesetzt.">Matches are always sorted by table number in ascending order. Cards fill the grid from left to right and then continue on the next row.</p></div></article>
+        <article><span>2</span><div><h3 data-en="Available tables appear automatically" data-de="Verfügbare Tische erscheinen automatisch">Available tables appear automatically</h3><p data-en="A running match is shown when streaming is enabled on its table and the devices can reach each other on the same network." data-de="Eine laufende Partie wird angezeigt, wenn Streaming am jeweiligen Tisch aktiviert ist und sich die Geräte im selben Netzwerk erreichen können.">A running match is shown when streaming is enabled on its table and the devices can reach each other on the same network.</p></div></article>
+        <article><span>3</span><div><h3 data-en="Unavailable tables are removed" data-de="Nicht verfügbare Tische werden entfernt">Unavailable tables are removed</h3><p data-en="If no update is received from a table for about five seconds, its card is removed until that table becomes available again." data-de="Wird etwa fünf Sekunden lang keine Aktualisierung von einem Tisch empfangen, wird seine Karte entfernt, bis der Tisch wieder verfügbar ist.">If no update is received from a table for about five seconds, its card is removed until that table becomes available again.</p></div></article>
+      </div>
+    </section>
+
+    <section class="monitor-section">
+      <div class="monitor-heading"><span>02</span><div><p data-en="ONE TABLE IN DETAIL" data-de="EIN TISCH IM DETAIL">ONE TABLE IN DETAIL</p><h2 data-en="Reading a table card" data-de="Eine Tischkarte lesen">Reading a table card</h2></div></div>
+      <p data-en="Each card uses the same header and footer. The information in the center changes slightly between 8-/9-/10-Ball and Straight Pool." data-de="Jede Karte verwendet denselben Kopf- und Fußbereich. Die Informationen in der Mitte unterscheiden sich leicht zwischen 8-/9-/10-Ball und 14.1 endlos.">Each card uses the same header and footer. The information in the center changes slightly between 8-/9-/10-Ball and Straight Pool.</p>
+
+      <figure class="monitor-figure table-figure">
+        <div class="table-image-stage"><img src="assets/images/Monitoring_Table1.png" width="764" height="312" loading="lazy" alt="Detailed Monitoring card for Table 1"><span class="monitor-marker marker-table">1</span><span class="monitor-marker marker-duration">2</span><span class="monitor-marker marker-players">3</span><span class="monitor-marker marker-scores">4</span><span class="monitor-marker marker-sets">5</span><span class="monitor-marker marker-details">6</span></div>
+      </figure>
+
+      <div class="card-field-grid">
+        <article><span>1</span><div><h3 data-en="Table number" data-de="Tischnummer">Table number</h3><p data-en="Identifies the physical table and determines the card's position in the ordered overview." data-de="Kennzeichnet den physischen Tisch und bestimmt die Position der Karte in der sortierten Übersicht.">Identifies the physical table and determines the card's position in the ordered overview.</p></div></article>
+        <article><span>2</span><div><h3 data-en="Match duration" data-de="Partiedauer">Match duration</h3><p data-en="Shows how long the match has been running, displayed in hours and minutes as required." data-de="Zeigt, wie lange die Partie bereits läuft, je nach Dauer in Stunden und Minuten.">Shows how long the match has been running, displayed in hours and minutes as required.</p></div></article>
+        <article><span>3</span><div><h3 data-en="Players" data-de="Spieler">Players</h3><p data-en="The two player names are shown in the same top-to-bottom order used by the scoring page." data-de="Die beiden Spielernamen erscheinen in derselben Reihenfolge von oben nach unten wie in der Spielstandsanzeige.">The two player names are shown in the same top-to-bottom order used by the scoring page.</p></div></article>
+        <article><span>4</span><div><h3 data-en="Current score" data-de="Aktueller Spielstand">Current score</h3><p data-en="For 8-Ball, 9-Ball, and 10-Ball, these values show the racks won by each player in the current set." data-de="Bei 8-Ball, 9-Ball und 10-Ball zeigen diese Werte die von jedem Spieler im aktuellen Satz gewonnenen Racks.">For 8-Ball, 9-Ball, and 10-Ball, these values show the racks won by each player in the current set.</p></div></article>
+        <article><span>5</span><div><h3 data-en="Sets won" data-de="Gewonnene Sätze">Sets won</h3><p data-en="The colored boxes show how many sets each player has already won. They are displayed for 8-Ball, 9-Ball, and 10-Ball matches." data-de="Die farbigen Felder zeigen, wie viele Sätze jeder Spieler bereits gewonnen hat. Sie werden bei 8-Ball-, 9-Ball- und 10-Ball-Partien angezeigt.">The colored boxes show how many sets each player has already won. They are displayed for 8-Ball, 9-Ball, and 10-Ball matches.</p></div></article>
+        <article><span>6</span><div><h3 data-en="Match details and status" data-de="Partiedetails und Status">Match details and status</h3><p data-en="The footer shows the discipline, Race To target, sets required to win, and whether the match is Active or has ended." data-de="Der Fußbereich zeigt die Disziplin, das Ausspielziel, die benötigten Gewinnsätze und ob die Partie aktiv oder beendet ist.">The footer shows the discipline, Race To target, sets required to win, and whether the match is Active or has ended.</p></div></article>
+      </div>
+
+      <aside class="straight-variant"><h3 data-en="Straight Pool table cards" data-de="Tischkarten für 14.1 endlos">Straight Pool table cards</h3><p data-en="Straight Pool uses the same table number, duration, player names, scores, Race To target, and status. Instead of set counters, the center additionally shows each player's completed innings and high run (HR)." data-de="14.1 endlos verwendet dieselben Angaben für Tischnummer, Dauer, Spielernamen, Spielstände, Ausspielziel und Status. Anstelle der Satzzähler zeigt der mittlere Bereich zusätzlich die abgeschlossenen Aufnahmen und die Höchstserie (HR) jedes Spielers.">Straight Pool uses the same table number, duration, player names, scores, Race To target, and status. Instead of set counters, the center additionally shows each player's completed innings and high run (HR).</p></aside>
+    </section>
+  </div>
+</main>
+<script src="assets/js/manual.js"></script>
+</body>
+</html>

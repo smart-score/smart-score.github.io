@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/manual.css">
+  <link rel="stylesheet" href="assets/css/manual-details.css">
+  <link rel="stylesheet" href="assets/css/settings.css">
+  <title>Settings · Smart-Score</title>
+</head>
+<body>
+<main class="details-page settings-page" data-title-en="Settings" data-title-de="Einstellungen">
+  <div class="bg"></div><div class="rays"></div>
+  <div class="language-switcher">
+    <span class="language-label" data-en="Language" data-de="Sprache">Language</span>
+    <details id="language"><summary aria-label="Select language"><span id="current-flag" class="flag flag-us" aria-hidden="true"></span><span id="current-language">English</span></summary><div class="language-menu"><button type="button" data-language="en"><span class="flag flag-us" aria-hidden="true"></span>English</button><button type="button" data-language="de"><span class="flag flag-de" aria-hidden="true"></span>Deutsch</button></div></details>
+  </div>
+
+  <div class="details-shell settings-shell">
+    <a class="back-link" href="manual.html" data-en="← Back to manual" data-de="← Zurück zur Anleitung">← Back to manual</a>
+    <img class="manual-logo" src="assets/images/app_logo.svg" alt="Smart-Score">
+
+    <header class="settings-intro">
+      <p class="settings-eyebrow" data-en="APP AND MATCH DEFAULTS" data-de="APP- UND PARTIEVORGABEN">APP AND MATCH DEFAULTS</p>
+      <h1 data-en="Settings" data-de="Einstellungen">Settings</h1>
+      <p data-en="Settings are stored automatically—there is no separate Save button. General options control the app and its network behavior. Discipline settings provide the initial values for newly started matches; Race To and player names can still be adjusted for each individual match on its scoring page." data-de="Einstellungen werden automatisch gespeichert – eine separate Speichern-Schaltfläche gibt es nicht. Allgemeine Optionen steuern die App und ihr Netzwerkverhalten. Disziplineinstellungen liefern die Anfangswerte für neu gestartete Partien; Ausspielziel und Spielernamen können weiterhin für jede einzelne Partie in ihrer Spielstandsanzeige angepasst werden.">Settings are stored automatically—there is no separate Save button. General options control the app and its network behavior. Discipline settings provide the initial values for newly started matches; Race To and player names can still be adjusted for each individual match on its scoring page.</p>
+    </header>
+
+    <section class="settings-section">
+      <div class="settings-heading"><span>01</span><div><p data-en="APPLICATION-WIDE" data-de="APP-ÜBERGREIFEND">APPLICATION-WIDE</p><h2 data-en="General" data-de="Allgemein">General</h2></div></div>
+      <p data-en="These options apply across all disciplines. Changes are stored as soon as a value, switch, language, or theme is selected." data-de="Diese Optionen gelten für alle Disziplinen. Änderungen werden gespeichert, sobald ein Wert, Schalter, eine Sprache oder ein Design ausgewählt wird.">These options apply across all disciplines. Changes are stored as soon as a value, switch, language, or theme is selected.</p>
+
+      <figure class="settings-figure">
+        <div class="settings-image-stage general-settings-stage">
+          <img src="assets/images/Settings_General.png" width="2335" height="692" loading="lazy" alt="Smart-Score General settings showing table number, player reuse, streaming, archive size, language, and theme">
+          <span class="settings-marker general-marker marker-table-number" aria-hidden="true">1</span>
+          <span class="settings-marker general-marker marker-reuse" aria-hidden="true">2</span>
+          <span class="settings-marker general-marker marker-streaming" aria-hidden="true">3</span>
+          <span class="settings-marker general-marker marker-archive-limit" aria-hidden="true">4</span>
+          <span class="settings-marker general-marker marker-language" aria-hidden="true">5</span>
+          <span class="settings-marker general-marker marker-theme" aria-hidden="true">6</span>
+        </div>
+      </figure>
+
+      <div class="settings-card-grid general-settings-grid">
+        <article><span>1</span><div><h3 data-en="Table Number" data-de="Tischnummer">Table Number</h3><p data-en="Identifies the physical table and allows Monitoring to distinguish matches from different tables. Although unique numbers are not required, using a different number for each table on the same network is recommended. Enter a value from 1 to 999. The factory default is 1." data-de="Kennzeichnet den physischen Tisch und ermöglicht dem Monitoring, Partien verschiedener Tische zu unterscheiden. Eindeutige Nummern sind zwar nicht zwingend erforderlich, es wird jedoch empfohlen, jedem Tisch im selben Netzwerk eine andere Nummer zuzuweisen. Gib einen Wert von 1 bis 999 ein. Die Werkseinstellung ist 1.">Identifies the physical table and allows Monitoring to distinguish matches from different tables. Although unique numbers are not required, using a different number for each table on the same network is recommended. Enter a value from 1 to 999. The factory default is 1.</p></div></article>
+        <article><span>2</span><div><h3 data-en="Reuse player names" data-de="Spielernamen wiederverwenden">Reuse player names</h3><p data-en="When enabled, a new match is prefilled with the player names used in the last match. When disabled—or after restarting the app—the localized default names Player 1 and Player 2 are used. Reuse is enabled by default." data-de="Ist die Option aktiviert, wird eine neue Partie mit den Spielernamen aus der letzten Partie vorbelegt. Ist sie deaktiviert – oder wurde die App neu gestartet –, werden die lokalisierten Standardnamen Spieler 1 und Spieler 2 verwendet. Die Wiederverwendung ist standardmäßig aktiviert.">When enabled, a new match is prefilled with the player names used in the last match. When disabled—or after restarting the app—the localized default names Player 1 and Player 2 are used. Reuse is enabled by default.</p></div></article>
+        <article><span>3</span><div><h3 data-en="Streaming" data-de="Streaming">Streaming</h3><p data-en="When enabled, Smart-Score broadcasts the running match on the local network so another device can display it in Monitoring. The scoring and monitoring devices must be able to reach each other on the same network. Streaming is enabled by default." data-de="Ist Streaming aktiviert, sendet Smart-Score die laufende Partie im lokalen Netzwerk, damit ein anderes Gerät sie im Monitoring anzeigen kann. Spielstands- und Monitoring-Gerät müssen sich im selben Netzwerk erreichen können. Streaming ist standardmäßig aktiviert.">When enabled, Smart-Score broadcasts the running match on the local network so another device can display it in Monitoring. The scoring and monitoring devices must be able to reach each other on the same network. Streaming is enabled by default.</p></div></article>
+        <article><span>4</span><div><h3 data-en="Max. archive entries" data-de="Max. Archiveinträge">Max. archive entries</h3><p data-en="Sets how many completed matches may be retained locally, from 1 to 10,000. When a newly finalized match exceeds the limit, Smart-Score keeps the newest matches and removes the oldest entries. The factory default is 1,000." data-de="Legt fest, wie viele abgeschlossene Partien lokal gespeichert werden dürfen: 1 bis 10.000. Überschreitet eine neu abgeschlossene Partie die Grenze, behält Smart-Score die neuesten Partien und entfernt die ältesten Einträge. Die Werkseinstellung ist 1.000.">Sets how many completed matches may be retained locally, from 1 to 10,000. When a newly finalized match exceeds the limit, Smart-Score keeps the newest matches and removes the oldest entries. The factory default is 1,000.</p></div></article>
+        <article><span>5</span><div><h3 data-en="Language" data-de="Sprache">Language</h3><p data-en="Opens the language selector. Choose English or German; all localized texts are refreshed immediately, and new matches use player default names in the selected language. English is the factory default." data-de="Öffnet die Sprachauswahl. Wähle Englisch oder Deutsch; alle lokalisierten Texte werden sofort aktualisiert und neue Partien verwenden Standard-Spielernamen in der gewählten Sprache. Englisch ist die Werkseinstellung.">Opens the language selector. Choose English or German; all localized texts are refreshed immediately, and new matches use player default names in the selected language. English is the factory default.</p></div></article>
+        <article><span>6</span><div><h3 data-en="Theme" data-de="Design">Theme</h3><p data-en="Changes the app's color theme immediately. The available themes are Dark Blue, Dark Green, and Dark Red; the selected theme remains active after restarting Smart-Score. Dark Blue is the factory default." data-de="Ändert das Farbschema der App sofort. Verfügbar sind Dunkelblau, Dunkelgrün und Dunkelrot; das gewählte Design bleibt auch nach einem Neustart von Smart-Score aktiv. Dunkelblau ist die Werkseinstellung.">Changes the app's color theme immediately. The available themes are Dark Blue, Dark Green, and Dark Red; the selected theme remains active after restarting Smart-Score. Dark Blue is the factory default.</p></div></article>
+      </div>
+
+      <aside class="settings-hint streaming-hint"><strong data-en="Streaming requirements" data-de="Voraussetzungen für Streaming">Streaming requirements</strong><p data-en="Smart-Score sends the running match to the local network using UDP broadcast. If you decline the operating system's “Allow access to the local network” dialog, the OS blocks this traffic and nothing can be streamed—even when Streaming is enabled in Smart-Score. On iOS, access can be restored under Settings > Apps > Smart-Score > Local Network. The scoring and monitoring devices must be on the same local network, and UDP broadcast traffic must not be blocked by the operating system, firewall, Wi-Fi client isolation, router, or managed switch." data-de="Smart-Score sendet die laufende Partie per UDP-Broadcast in das lokale Netzwerk. Wenn du den Systemdialog „Zugriff auf das lokale Netzwerk erlauben“ ablehnst, blockiert das Betriebssystem diesen Datenverkehr und es kann nichts gestreamt werden – auch wenn Streaming in Smart-Score aktiviert ist. Unter iOS kann der Zugriff unter Einstellungen > Apps > Smart-Score > Lokales Netzwerk wieder aktiviert werden. Spielstands- und Monitoring-Gerät müssen sich im selben lokalen Netzwerk befinden; außerdem darf der UDP-Broadcast-Datenverkehr weder vom Betriebssystem noch von Firewall, WLAN-Client-Isolation, Router oder verwaltetem Switch blockiert werden.">Smart-Score sends the running match to the local network using UDP broadcast. If you decline the operating system's “Allow access to the local network” dialog, the OS blocks this traffic and nothing can be streamed—even when Streaming is enabled in Smart-Score. On iOS, access can be restored under Settings > Apps > Smart-Score > Local Network. The scoring and monitoring devices must be on the same local network, and UDP broadcast traffic must not be blocked by the operating system, firewall, Wi-Fi client isolation, router, or managed switch.</p></aside>
+    </section>
+
+    <section class="settings-section">
+      <div class="settings-heading"><span>02</span><div><p data-en="14.1 CONTINUOUS" data-de="14.1 ENDLOS">14.1 CONTINUOUS</p><h2 data-en="Straight Pool" data-de="14.1 endlos">Straight Pool</h2></div></div>
+      <p data-en="Straight Pool has one discipline default: its target score. This value is loaded when a new Straight Pool match is created." data-de="14.1 endlos besitzt eine Disziplinvorgabe: den Zielpunktestand. Dieser Wert wird beim Erstellen einer neuen Partie geladen.">Straight Pool has one discipline default: its target score. This value is loaded when a new Straight Pool match is created.</p>
+
+      <figure class="settings-figure straight-settings-figure">
+        <div class="settings-image-stage">
+          <img src="assets/images/Settings_14.png" width="2334" height="230" loading="lazy" alt="Straight Pool settings with Race To target">
+          <span class="settings-marker marker-straight-race" aria-hidden="true">1</span>
+        </div>
+      </figure>
+
+      <div class="settings-card-grid single-setting-grid">
+        <article><span>1</span><div><h3 data-en="Race To" data-de="Ausspielziel">Race To</h3><p data-en="Sets the number of points required to win a newly created Straight Pool match. Enter a value up to 9,999; the default is 125. Although this is the default for new matches, the value can be changed for each individual match by tapping Race To on the scoring page." data-de="Legt fest, wie viele Punkte zum Gewinn einer neu erstellten Partie 14.1 endlos benötigt werden. Gib einen Wert bis 9.999 ein; die Standardeinstellung ist 125. Obwohl dieser Wert als Vorgabe für neue Partien dient, kann er für jede einzelne Partie durch Antippen des Ausspielziels in der Spielstandsanzeige geändert werden.">Sets the number of points required to win a newly created Straight Pool match. Enter a value up to 9,999; the default is 125. Although this is the default for new matches, the value can be changed for each individual match by tapping Race To on the scoring page.</p></div></article>
+      </div>
+    </section>
+
+    <section class="settings-section">
+      <div class="settings-heading"><span>03</span><div><p data-en="SEPARATE DEFAULTS, SAME OPTIONS" data-de="GETRENNTE VORGABEN, GLEICHE OPTIONEN">SEPARATE DEFAULTS, SAME OPTIONS</p><h2 data-en="8-Ball, 9-Ball, and 10-Ball" data-de="8-Ball, 9-Ball und 10-Ball">8-Ball, 9-Ball, and 10-Ball</h2></div></div>
+      <p data-en="Each of these three disciplines has its own settings group. They contain exactly the same four entries, but their values are stored independently—for example, changing a value for 9-Ball does not change 8-Ball or 10-Ball." data-de="Jede dieser drei Disziplinen besitzt eine eigene Einstellungsgruppe. Alle enthalten exakt dieselben vier Einträge, ihre Werte werden jedoch unabhängig gespeichert – eine Änderung eines Wertes für 9-Ball verändert beispielsweise weder 8-Ball noch 10-Ball.">Each of these three disciplines has its own settings group. They contain exactly the same four entries, but their values are stored independently—for example, changing a value for 9-Ball does not change 8-Ball or 10-Ball.</p>
+
+      <figure class="settings-figure xball-settings-figure">
+        <div class="settings-image-stage">
+          <img src="assets/images/Settings_8-9-10_Ball.png" width="2388" height="498" loading="lazy" alt="8-Ball, 9-Ball, and 10-Ball settings with match targets and break modes">
+          <span class="settings-marker marker-x-race" aria-hidden="true">1</span>
+          <span class="settings-marker marker-x-sets" aria-hidden="true">2</span>
+          <span class="settings-marker marker-x-break-set" aria-hidden="true">3</span>
+          <span class="settings-marker marker-x-break-between" aria-hidden="true">4</span>
+        </div>
+      </figure>
+
+      <div class="settings-card-grid xball-settings-grid">
+        <article><span>1</span><div><h3 data-en="Race To" data-de="Ausspielziel">Race To</h3><p data-en="Sets how many racks a player must win to take one set in that discipline. Enter a value from 1 to 100. The default is 7. Although this is the default for new matches, the value can be changed for each individual match by tapping Race To on the scoring page." data-de="Legt fest, wie viele Racks ein Spieler gewinnen muss, um einen Satz in dieser Disziplin zu gewinnen. Gib einen Wert von 1 bis 100 ein. Die Standardeinstellung ist 7. Obwohl dieser Wert als Vorgabe für neue Partien dient, kann er für jede einzelne Partie durch Antippen des Ausspielziels in der Spielstandsanzeige geändert werden.">Sets how many racks a player must win to take one set in that discipline. Enter a value from 1 to 100. The default is 7. Although this is the default for new matches, the value can be changed for each individual match by tapping Race To on the scoring page.</p></div></article>
+        <article><span>2</span><div><h3 data-en="Sets to win" data-de="Gewinnsätze">Sets to win</h3><p data-en="Sets how many sets a player must win to win the match. Enter a value from 1 to 9. The default is 1. This value can also be changed for an individual match on the scoring page." data-de="Legt fest, wie viele Sätze ein Spieler zum Gewinn der Partie gewinnen muss. Gib einen Wert von 1 bis 9 ein. Die Standardeinstellung ist 1. Dieser Wert kann für eine einzelne Partie auch in der Spielstandsanzeige geändert werden.">Sets how many sets a player must win to win the match. Enter a value from 1 to 9. The default is 1. This value can also be changed for an individual match on the scoring page.</p></div></article>
+        <article><span>3</span><div><h3 data-en="Break mode within a set" data-de="Anstoßmodus innerhalb eines Satzes">Break mode within a set</h3><p><strong data-en="Winner:" data-de="Gewinner:">Winner:</strong><span data-en=" the player who wins a rack breaks the next rack. " data-de=" Der Gewinner eines Racks stößt das nächste Rack an. "> the player who wins a rack breaks the next rack. </span><strong data-en="Alternating:" data-de="Abwechselnd:">Alternating:</strong><span data-en=" the break switches between the two players after every rack, regardless of who won." data-de=" Der Anstoß wechselt nach jedem Rack zwischen den beiden Spielern, unabhängig vom Gewinner."> the break switches between the two players after every rack, regardless of who won.</span></p></div></article>
+        <article><span>4</span><div><h3 data-en="Break mode from set to set" data-de="Anstoßmodus von Satz zu Satz">Break mode from set to set</h3><p><strong data-en="Winner:" data-de="Gewinner:">Winner:</strong><span data-en=" the winner of the completed set starts the next set. " data-de=" Der Gewinner des abgeschlossenen Satzes beginnt den nächsten Satz. "> the winner of the completed set starts the next set. </span><strong data-en="Alternating:" data-de="Abwechselnd:">Alternating:</strong><span data-en=" the player who started the previous set is replaced by the other player as the starting breaker." data-de=" Der Spieler, der den vorherigen Satz begonnen hat, wird im nächsten Satz vom anderen Spieler als beginnender Anstoßspieler abgelöst."> the player who started the previous set is replaced by the other player as the starting breaker.</span></p></div></article>
+      </div>
+
+      <aside class="settings-hint"><strong data-en="Starting breaker" data-de="Beginnender Anstoßspieler">Starting breaker</strong><p data-en="At 0:0 in the first set, choose the starting breaker directly on the scoring page—normally the player who won the lag. Smart-Score then follows the break modes configured here." data-de="Wähle beim Stand von 0:0 im ersten Satz den beginnenden Anstoßspieler direkt in der Spielstandsanzeige – normalerweise den Gewinner des Ausstoßens. Anschließend folgt Smart-Score den hier eingestellten Anstoßmodi.">At 0:0 in the first set, choose the starting breaker directly on the scoring page—normally the player who won the lag. Smart-Score then follows the break modes configured here.</p></aside>
+    </section>
+  </div>
+</main>
+<script src="assets/js/manual.js"></script>
+</body>
+</html>
