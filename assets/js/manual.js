@@ -8,7 +8,13 @@ document.querySelectorAll('.manual-nav a[href^="#"]').forEach(link=>link.addEven
   event.preventDefault();
   const target=document.querySelector(link.getAttribute('href'));
   if(!target)return;
-  const top=target.getBoundingClientRect().top-manualScroll.getBoundingClientRect().top+manualScroll.scrollTop;
-  manualScroll.scrollTo({top,behavior:'smooth'});
+  const scrollStyle=getComputedStyle(manualScroll);
+  const usesInnerScroll=(scrollStyle.overflowY==='auto'||scrollStyle.overflowY==='scroll')&&manualScroll.scrollHeight>manualScroll.clientHeight;
+  if(usesInnerScroll){
+    const top=target.getBoundingClientRect().top-manualScroll.getBoundingClientRect().top+manualScroll.scrollTop;
+    manualScroll.scrollTo({top,behavior:'smooth'});
+  }else{
+    target.scrollIntoView({behavior:'smooth',block:'start'});
+  }
   history.replaceState(null,'',link.getAttribute('href'));
 }));
