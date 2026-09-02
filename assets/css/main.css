@@ -7,6 +7,7 @@ body{margin:0;background:var(--page);color:var(--text);font-family:Inter,sans-se
 .rays{display:none}.ball{display:none}
 .content,.device,.availability,.buttons,.privacy-link{position:relative;z-index:2}.content{width:min(900px,100%)}
 .brand-logo{display:block;width:min(700px,90%);height:auto;margin:0 auto 24px;filter:drop-shadow(0 5px 14px rgba(210,184,95,.14));opacity:.96}
+.brand-slogan{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 0 13px;color:var(--accent);font:700 clamp(.78rem,1.5vw,.95rem)/1 Montserrat,sans-serif;letter-spacing:.16em;text-transform:uppercase}.brand-slogan:before,.brand-slogan:after{content:'';width:clamp(24px,4vw,42px);height:1px;background:linear-gradient(90deg,transparent,var(--accent))}.brand-slogan:after{background:linear-gradient(90deg,var(--accent),transparent)}
 h1{margin:0;font:800 clamp(1.45rem,3.2vw,2.35rem)/1.18 Montserrat,sans-serif;letter-spacing:-.03em;color:var(--text)}
 #caption{margin:13px 0 0;font-size:clamp(1rem,1.8vw,1.2rem);color:var(--muted)}
 .device{width:min(640px,92%);margin-top:8px;padding:8px;background:linear-gradient(145deg,#1b1d22,#101115);border:1px solid rgba(255,255,255,.13);border-radius:10px;box-shadow:0 34px 70px rgba(0,0,0,.48),0 8px 18px rgba(0,0,0,.34),inset 0 1px rgba(255,255,255,.06)}
