@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
   <defs>
     <clipPath id="google-play-mark">
-      <path d="M8.8 4.7C7.2 3.8 6 4.6 6 6.5v35c0 1.9 1.2 2.7 2.8 1.8l32-17.9c1.6-.9 1.6-1.9 0-2.8Z"/>
+      <path d="M4 7.6C4 3.3 8.6 .6 12.4 2.8L40.9 19.2C44.6 21.3 44.6 26.7 40.9 28.8L12.4 45.2C8.6 47.4 4 44.7 4 40.4Z"/>
     </clipPath>
   </defs>
   <g clip-path="url(#google-play-mark)">
-    <path d="M6 4 26 24 6 44Z" fill="#4285f4"/>
-    <path d="M6 4h4l24 13-8 7Z" fill="#34a853"/>
-    <path d="m26 24 8 7-24 13H6Z" fill="#ea4335"/>
-    <path d="m26 24 8-7 10 7-10 7Z" fill="#fbbc04"/>
+    <path d="M0 0h48v48H0Z" fill="#34a853"/>
+    <path d="M0 2 22 24 0 46Z" fill="#4285f4"/>
+    <path d="M0 46 22 24 48 50H0Z" fill="#ea4335"/>
+    <path d="M22 24 48-2v52Z" fill="#fbbc04"/>
   </g>
 </svg>
